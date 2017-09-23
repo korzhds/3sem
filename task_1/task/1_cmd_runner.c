@@ -42,7 +42,7 @@ int main() {
         exit(2);
         break;
       case -1:
-        printf("error in fork\n");
+        printf("Error in fork\n");
         exit(42);
         break;
       default:
