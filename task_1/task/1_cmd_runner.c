@@ -37,12 +37,20 @@ int main() {
     a[k] = NULL;
     switch(pid = fork()) {
       case 0:
+<<<<<<< HEAD
         execv(a[0], a);
+=======
+        execvp(a[0], a);
+>>>>>>> dev
         printf("Error in execv\n");
         exit(2);
         break;
       case -1:
+<<<<<<< HEAD
         printf("error in fork\n");
+=======
+        printf("Error in fork\n");
+>>>>>>> dev
         exit(42);
         break;
       default:
